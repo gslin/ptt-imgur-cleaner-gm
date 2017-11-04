@@ -6,3 +6,6 @@
 // @run-at        document-idle
 // @version       20171104.0
 // ==/UserScript==
+
+(function(){
+})();
