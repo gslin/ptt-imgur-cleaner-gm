@@ -4,7 +4,8 @@
 // @description   Replace smaller version Imgur image to large one.
 // @include       https://www.ptt.cc/bbs/*
 // @run-at        document-idle
-// @version       20171114.0
+// @version       20171114.1
+// @license       MIT
 // ==/UserScript==
 
 (function(){
