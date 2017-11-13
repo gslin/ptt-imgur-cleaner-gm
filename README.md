@@ -4,7 +4,9 @@ A Greasemonkey script to cleanup Ptt's Imgur thumb, replace the smaller images t
 
 ## Install
 
-You may access https://openuserjs.org/scripts/gslin/Ptt_Imgur_Cleaner to install this script.
+You may access this script in the following sites:
+* https://greasyfork.org/en/scripts/35102-ptt-imgur-cleaner
+* https://openuserjs.org/scripts/gslin/Ptt_Imgur_Cleaner
 
 ## License
 
