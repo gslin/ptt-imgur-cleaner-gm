@@ -4,7 +4,7 @@
 // @description   Replace smaller version Imgur image to large one.
 // @include       https://www.ptt.cc/bbs/*
 // @run-at        document-idle
-// @version       20171114.2
+// @version       20171114.3
 // @license       MIT
 // ==/UserScript==
 
@@ -31,6 +31,6 @@
 
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".richcontent { max-height: 100%; max-width: 100%; }\nimg { max-height: 100%; }";
+    css.innerHTML = ".richcontent { max-width: 100%; }\nimg { max-height: 100%; }";
     document.body.appendChild(css);
 })();
