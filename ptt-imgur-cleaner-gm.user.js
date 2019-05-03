@@ -4,7 +4,7 @@
 // @description   Replace smaller version Imgur image to large one.
 // @include       https://www.ptt.cc/bbs/*
 // @run-at        document-idle
-// @version       0.20190504.0
+// @version       0.20190504.1
 // @grant         none
 // @run-at        document-start
 // @license       MIT
@@ -23,14 +23,16 @@
     css.innerHTML = ".richcontent { max-width: 100%; }\nimg { max-height: 100%; }";
     head.appendChild(css);
 
-    let targets = document.querySelectorAll('.richcontent iframe.imgur-embed-iframe-pub');
-    targets.forEach(el => {
-        var id = el.getAttribute('id').substring(23);
+    setInterval(() => {
+        let targets = document.querySelectorAll('.richcontent iframe.imgur-embed-iframe-pub');
+        targets.forEach(el => {
+            var id = el.getAttribute('id').substring(23);
 
-        // Always using .png
-        var img = document.createElement('img');
-        img.setAttribute('src', '//i.imgur.com/' + id + '.png');
+            // Always using .png
+            var img = document.createElement('img');
+            img.setAttribute('src', '//i.imgur.com/' + id + '.png');
 
-        el.parentNode.replaceChild(img, el);
-    });
+            el.parentNode.replaceChild(img, el);
+        });
+    }, 200);
 })();
