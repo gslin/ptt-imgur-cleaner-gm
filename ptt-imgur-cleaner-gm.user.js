@@ -3,8 +3,9 @@
 // @namespace     https://blog.gslin.org/ptt-imgur-gm
 // @description   Replace smaller version Imgur image to large one.
 // @include       https://www.ptt.cc/bbs/*
+// @include       https://www.ptt.cc/man/*
 // @run-at        document-idle
-// @version       0.20190504.1
+// @version       0.20191006.0
 // @grant         none
 // @run-at        document-start
 // @license       MIT
@@ -28,9 +29,9 @@
         targets.forEach(el => {
             var id = el.getAttribute('id').substring(23);
 
-            // Always using .png
+            // Use .webp
             var img = document.createElement('img');
-            img.setAttribute('src', '//i.imgur.com/' + id + '.png');
+            img.setAttribute('src', '//i.imgur.com/' + id + '.webp');
 
             el.parentNode.replaceChild(img, el);
         });
