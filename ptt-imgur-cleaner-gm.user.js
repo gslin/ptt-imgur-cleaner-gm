@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name          Ptt Imgur Cleaner
+// @name          [Deprecated] Ptt Imgur Cleaner
 // @namespace     https://blog.gslin.org/ptt-imgur-gm
 // @description   Replace smaller version Imgur image to large one.
 // @include       https://www.ptt.cc/bbs/*
 // @include       https://www.ptt.cc/man/*
 // @run-at        document-idle
-// @version       0.20191006.0
+// @version       0.20191006.1
 // @grant         none
 // @run-at        document-start
 // @license       MIT
